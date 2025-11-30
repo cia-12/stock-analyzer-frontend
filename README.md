@@ -1,16 +1,43 @@
-# React + Vite
+# Real-Time Stock Analyzer – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **React frontend** for the Real-Time Stock Analyzer project.  
+It allows users to search for a stock by company name or symbol and view:
 
-Currently, two official plugins are available:
+- Current price & daily change
+- Intraday price chart
+- A simple Bullish / Bearish / Neutral analysis
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The frontend communicates with a Node.js + Express backend.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧱 Tech Stack
 
-## Expanding the ESLint configuration
+- **React**
+- **Vite**
+- **Recharts**
+- **Fetch API**
+- **HTML / CSS / JavaScript**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+
+```text
+stock-analyzer-frontend/
+  ├── public/
+  ├── src/
+  │   ├── components/
+  │   │   ├── SearchBar.jsx
+  │   │   ├── Loader.jsx
+  │   │   ├── ErrorMessage.jsx
+  │   │   ├── StockOverview.jsx
+  │   │   ├── StockChart.jsx
+  │   │   └── AnalysisPanel.jsx
+  │   ├── App.jsx
+  │   ├── main.jsx
+  │   ├── index.css
+  │   └── App.css
+  ├── package.json
+  ├── vite.config.js
+  └── README.md
